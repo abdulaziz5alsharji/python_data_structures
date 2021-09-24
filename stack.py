@@ -14,6 +14,7 @@ class Stack:
         if self.isEmpty():
             raise Exception("Tne Stack Is Empty")
         self.__stack.pop(self.__top)
+        self.__top -= 1
 
     @property
     def getTop(self):
